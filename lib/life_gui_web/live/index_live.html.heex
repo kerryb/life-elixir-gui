@@ -1,0 +1,5 @@
+<div class="flex flex-col text-[0px] m-0 p-0">
+  <div :for={row <- Grid.new(@life)} class="flex-row">
+    <div :for={point <- row} class={["inline-block", "h-2", "w-2", if(point, do: "bg-black")]}>&nbsp;</div>
+  </div>
+</div>
